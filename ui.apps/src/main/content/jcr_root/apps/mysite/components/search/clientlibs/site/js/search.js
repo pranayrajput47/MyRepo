@@ -5,7 +5,7 @@ $(function () {
         if (keywords.length >= 3) {
             $.get("/bin/fetchKeyword?keyWord="+keywords)
                 .done(function (data) {
-                    alert("Data Loaded: " + data);
+                    console.log("Data Loaded: " + data);
                 });
         }
     });
