@@ -38,16 +38,11 @@ public class FetchSearchKeywordsServlet extends SlingSafeMethodsServlet {
     //private static final Logger log = LoggerFactory.getLogger(FetchSearchKeywordsServlet.class);
 
     private static final long serialVersionUID = 1L;
-     //log.info("#### Inside dopost of StoreDataInDBWithAttachmentsInfo ####");
 
     protected void doGet(final SlingHttpServletRequest req,
             final SlingHttpServletResponse resp) throws ServletException, IOException {
-//        final Resource resource = req.getResource();
           req.getParameter("keyWord").toString();
-         resp.setContentType("text/plain");
-//        resp.getWriter().write("Title = " + resource.getValueMap().get(JcrConstants.JCR_TITLE));
-
-      // log.info(req.getParameter("keyWords").toString());
+         resp.setContentType("application/json");
 
         PrintWriter out = null;
         out = resp.getWriter();
