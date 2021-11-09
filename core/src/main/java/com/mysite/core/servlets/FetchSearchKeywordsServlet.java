@@ -29,8 +29,7 @@ import java.io.PrintWriter;
         property = {
                 Constants.SERVICE_DESCRIPTION + "=" + "Fetch Keywords Servlet",
                 "sling.servlet.methods=" + HttpConstants.METHOD_GET,
-                "sling.servlet.paths=" + "/bin/fetchKeyword",
-                Constants.SERVICE_VENDOR + "=" + "Royal Enfield"
+                "sling.servlet.paths=" + "/bin/fetchKeyword"
         }
 )
 public class FetchSearchKeywordsServlet extends SlingSafeMethodsServlet {
